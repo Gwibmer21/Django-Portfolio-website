@@ -234,7 +234,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(5, 13, 24, 0.55);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -247,6 +247,8 @@ h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  padding-left: 460px;
+  /* 300px fixed sidebar + larger gutter */
 }
 
 #hero h1 {
@@ -255,6 +257,7 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
 }
 
 #hero p {
@@ -262,6 +265,7 @@ h6 {
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
 }
 
 #hero p span {
@@ -274,6 +278,13 @@ h6 {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+  }
+}
+
+@media (max-width: 1199px) {
+  #hero .hero-container {
+    padding-left: 24px;
+    /* header collapses on mobile */
   }
 }
 
