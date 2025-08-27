@@ -19,6 +19,10 @@ def project(request):
     return render(request, 'project.html')
 
 
+def user_management_dashboard(request):
+    return render(request, 'user_management_dashboard.html')
+
+
 def contact(request):
     #contact form database
     if request.method == "POST":
