@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Admin/Excel Automation for Ancap - Gerardo Wibmer</title>
+  <meta content="Django Excel automation system for Ancap mini market sales and purchases analytics" name="description">
+  <meta content="Django, Excel Automation, Analytics, Mini Market" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="{% static 'img/profile-img.jpg' %}" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="/">Gerardo Wibmer</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/gwibmer/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="#" class="github"><i class="bx bxl-github"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="/#hero" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="/#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="/#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills</span></a></li>
+          <li><a href="/#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="/#portfolio" class="nav-link scrollto active"><i class="bx bx-server"></i> <span>Projects</span></a></li>
+          <li><a href="/#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{% static 'img/portfolio/portfolio-4.jpg' %}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static 'img/portfolio/admin_post_purchase.png' %}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static 'img/portfolio/admin_profile.png' %}" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: Django Web Application</li>
+                <li><strong>Client</strong>: Ancap</li>
+                <li><strong>Project Date</strong>: 2024</li>
+                <li><strong>Project URL</strong>: <a href="#">Internal System</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Admin/Excel Automation for Ancap</h2>
+              <p>
+                A comprehensive Django-based automation system designed to streamline mini market operations by automating 
+                complex calculations and data processing tasks that previously required extensive manual work.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="portfolio-description">
+              <h3>Project Overview</h3>
+              <p>
+                This Django application revolutionizes how Ancap manages their mini market operations by automating 
+                critical business processes and providing powerful analytics capabilities. The system eliminates hours 
+                of manual work while providing valuable insights into business performance.
+              </p>
+
+              <h3>Key Features</h3>
+              <ul>
+                <li><strong>Automated Calculations:</strong> Automates complex metric calculations for sales and purchase data</li>
+                <li><strong>Data Integration:</strong> Seamlessly joins and processes sales and purchase data from multiple sources</li>
+                <li><strong>Time Savings:</strong> Reduces manual work from hours to minutes</li>
+                <li><strong>User-Friendly Interface:</strong> Clean Django admin interface for easy data management</li>
+                <li><strong>Advanced Analytics:</strong> Comprehensive reporting and data visualization</li>
+              </ul>
+
+              <h3>Analytics & Metrics</h3>
+              <p>The system provides detailed analytics including:</p>
+              <ul>
+                <li><strong>Slacking Products:</strong> Identifies products that are underperforming or need attention</li>
+                <li><strong>Best Performers:</strong> Highlights top-performing products and categories</li>
+                <li><strong>Sales Trends:</strong> Tracks sales patterns and seasonal variations</li>
+                <li><strong>Inventory Management:</strong> Monitors stock levels and reorder points</li>
+                <li><strong>Profitability Analysis:</strong> Calculates margins and profitability by product</li>
+                <li><strong>Purchase Optimization:</strong> Analyzes purchase patterns for better decision making</li>
+              </ul>
+
+              <h3>Technical Implementation</h3>
+              <ul>
+                <li><strong>Backend:</strong> Django with PostgreSQL database</li>
+                <li><strong>Data Processing:</strong> Pandas for Excel file processing and data manipulation</li>
+                <li><strong>Admin Interface:</strong> Custom Django admin with enhanced functionality</li>
+                <li><strong>Reporting:</strong> Automated report generation with charts and graphs</li>
+                <li><strong>Data Import:</strong> Excel file upload and processing capabilities</li>
+                <li><strong>Export:</strong> Generate reports in various formats (Excel, PDF, CSV)</li>
+              </ul>
+
+              <h3>Business Impact</h3>
+              <p>
+                This automation system has transformed Ancap's mini market operations by:
+              </p>
+              <ul>
+                <li>Reducing manual data processing time by 90%</li>
+                <li>Improving data accuracy and eliminating human errors</li>
+                <li>Providing real-time insights for better decision making</li>
+                <li>Enabling proactive inventory management</li>
+                <li>Streamlining reporting processes for stakeholders</li>
+              </ul>
+
+              <h3>Future Enhancements</h3>
+              <p>
+                The system is designed to be scalable and can be extended with additional features such as:
+              </p>
+              <ul>
+                <li>Real-time dashboard with live data updates</li>
+                <li>Mobile app for on-the-go access</li>
+                <li>Predictive analytics for demand forecasting</li>
+                <li>Integration with external suppliers and systems</li>
+                <li>Advanced machine learning for pattern recognition</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/typed.js/typed.min.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
