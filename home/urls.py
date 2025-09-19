@@ -34,6 +34,7 @@ urlpatterns = [
     path('reroom', views.reroom, name='reroom'),
     path('insurance-call-simulator', views.insurance_call_simulator, name='insurance_call_simulator'),
     path('ocr-pdf-extractor', views.ocr_pdf_extractor, name='ocr_pdf_extractor'),
+    path('survey-creator', views.survey_creator, name='survey_creator'),
     path('#contact', views.contact, name='contact'),
     # path('skills', views.skills, name='skills'),
     # path('contact', views.contact, name='contact'),

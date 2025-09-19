@@ -50,3 +50,7 @@ def insurance_call_simulator(request):
 def ocr_pdf_extractor(request):
     return render(request, 'ocr_pdf_extractor.html')
 
+
+# Survey Creator project view
+def survey_creator(request):
+    return render(request, 'survey_creator.html')
